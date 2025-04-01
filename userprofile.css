@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFF5EE; 
+    color: #333333;
+    line-height: 1.6;
+    font-family: 'Lora';
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-header h1 {
+    color: #E67E22; 
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Lora';
+}
+
+.profile-header p {
+    color: #666666; 
+    font-size: 1.1em;
+    font-family: 'Poppins';
+}
+
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-error {
+    background-color: #FADBD8; 
+    color: #C0392B; 
+}
+
+.alert-success {
+    background-color: #D5F5E3; 
+    color: #28B463; 
+}
+
+.profile-content {
+    display: flex;
+    gap: 30px;
+    background-color: #FFFFFF;  
+    padding: 30px;
+    border: 1px solid #F39C12; 
+    border-radius: 8px;
+}
+
+.profile-sidebar {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #F39C12; 
+    margin-bottom: 20px;
+}
+
+.profile-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload-btn, .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn {
+    background-color: #F39C12; 
+    color: #FFFFFF;
+}
+
+.upload-btn:hover {
+    background-color: #E67E22; 
+}
+
+.delete-btn {
+    background-color: #E74C3C; 
+    color: #FFFFFF;
+}
+
+.delete-btn:hover {
+    background-color: #C0392B; 
+}
+
+.small {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.profile-details {
+    flex: 2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #E67E22; 
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F39C12; 
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.form-group textarea {
+    height: 100px;
+    /* userprofile.css */
+
+/* Container for the profile upload section */
+.profile-upload {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px;
+}
+
+/* Hide the default file input for custom styling */
+.profile-upload input[type="file"] {
+    display: none;
+}
+
+/* Style the custom upload button */
+.profile-upload .upload-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color, adjust as needed */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Icon styling within the button */
+.profile-upload .upload-btn i {
+    margin-right: 30px; /* Space between icon and text */
+}
+
+/* Hover effect for the upload button */
+.profile-upload .upload-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the small text (commented out in your HTML) */
+.profile-upload .small {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .profile-upload {
+        padding: 15px;
+    }
+    
+    .profile-upload .upload-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}resize: vertical;
+}
+
+
+.btn {
+    background-color: #F39C12; 
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #E67E22; 
+}
+
+
+.password-section {
+    margin-top: 40px;
+}
+
+.password-section h3 {
+    color: #E67E22; 
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-sidebar {
+        margin-bottom: 30px;
+    }
+}

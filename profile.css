@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;  
+    color: #333;
+    font-family: 'Poppins', Arial, sans-serif; 
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A5A3A; 
+    color: #FFFFFF;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: 'Playfair Display', Georgia, serif; 
+    font-size: 28px; 
+    font-weight: 700;
+}
+
+nav a {
+    color: #AEC7C5; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500; 
+}
+
+nav a:hover {
+    color: #F5A05A; 
+}
+
+.container {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 800px; 
+}
+
+h2, h3, h4 {
+    color: #4A5A3A; 
+    margin: 20px 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    margin: 10px 0;
+    color: #6A7A4A; 
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+}
+
+p strong {
+    color: #8B5A3E; 
+    font-weight: 600;
+}
+
+.calendar {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background-color: #AEC7C5; 
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.nav-btn:hover {
+    background-color: #E07A4F; 
+}
+
+.calendar form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calendar form label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    color: #4A5A3A; 
+}
+
+.calendar form select {
+    padding: 5px;
+    border: 1px solid #AEC7C5; 
+    border-radius: 5px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.calendar form button {
+    background-color: #E07A4F; 
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.calendar form button:hover {
+    background-color: #F5A05A; 
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    color: #4A5A3A; 
+    border-bottom: 1px solid #AEC7C5; 
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.calendar-day.empty {
+    background-color: transparent;
+}
+
+.calendar-day.available {
+    background-color: #6A7A4A; 
+    color: #FFFFFF;
+}
+
+.calendar-day.unavailable {
+    background-color: #E07A4F; 
+    color: #FFFFFF;
+}
+
+/* Share Buttons */
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.share-btn {
+    background-color: #AEC7C5;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.share-btn:hover {
+    background-color: #E07A4F; 
+}
+
+.btn-download {
+    background-color: #6A7A4A; 
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.btn-download:hover {
+    background-color: #4A5A3A; 
+}
+.order-form {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-order {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    background-color: #218838;
+}
+.review-form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.review-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    color: #4A5A3A; 
+}
+
+.review-form select, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AEC7C5; 
+    border-radius: 5px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.review-form button {
+    background-color: #E07A4F; 
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.review-form button:hover {
+    background-color: #F5A05A; 
+}
+
+.cta-buttons {
+    margin: 20px 0;
+}
+
+.btn-message, .btn-booking {
+    background-color: #E07A4F; 
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-message:hover, .btn-booking:hover {
+    background-color: #F5A05A; 
+}
+
+body > a {
+    display: inline-block;
+    margin: 20px 0;
+    color: #AEC7C5; 
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+}
+
+body > a:hover {
+    color: #E07A4F; 
+}

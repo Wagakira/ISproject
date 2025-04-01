@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #AEC7C5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form {
+    background-color: #FFFFFF; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+form h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3A4A2D; 
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+form div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+form label {
+    font-family: 'Poppins', sans-serif;
+    color: #5E7042; 
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #E68B5A; 
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #8A6245; 
+    background-color: #F9F9F9; 
+    transition: border-color 0.3s ease;
+}
+
+
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form select:focus {
+    border-color: #F2A44A; 
+    outline: none;
+}
+
+
+form button {
+    background-color: #3A4A2D; 
+    color: #FFFFFF; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+form button:hover {
+    background-color: #5E7042; 
+}
+
+
+.formtext {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #8A6245; 
+}
+
+
+.formtext a {
+    color: #F2A44A; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.formtext a:hover {
+    text-decoration: underline;
+    color: #E68B5A; 
+}

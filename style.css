@@ -1,0 +1,146 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #A8C7C9; /* SW 9055 Billowy Breeze */
+    color: #2E3F2A; /* SW 6446 Arugula */
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    color: #5A6A3A; /* SW 6732 Organic Green */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #8A5A3A; /* SW 7702 Spiced Cider */
+    margin-bottom: 20px;
+}
+
+/* Success and Error Messages */
+.success-message, .error-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success-message {
+    background-color: #2E3F2A; /* SW 6446 Arugula */
+    color: #A8C7C9; /* SW 9055 Billowy Breeze */
+    animation: fadeOut 3s forwards;
+}
+
+.error-message {
+    background-color: #D87A4F; /* SW 6640 Tangerine */
+    color: #fff;
+}
+
+/* Fade-out animation for success message */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Signup and Login Forms */
+.signup-form, .login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #8A5A3A; /* SW 7702 Spiced Cider */
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2E3F2A; /* SW 6446 Arugula */
+    transition: border-color 0.3s;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #5A6A3A; /* SW 6732 Organic Green */
+    outline: none;
+}
+
+.error-text {
+    display: block;
+    color: #D87A4F; /* SW 6640 Tangerine */
+    font-size: 0.85rem;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+button[type="submit"] {
+    background-color: #5A6A3A; /* SW 6732 Organic Green */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #F5A623; /* SW 6890 Osage Orange */
+}
+
+.form-text {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #8A5A3A; /* SW 7702 Spiced Cider */
+}
+
+.form-text a {
+    color: #5A6A3A; /* SW 6732 Organic Green */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-text a:hover {
+    color: #F5A623; /* SW 6890 Osage Orange */
+    text-decoration: underline;
+}

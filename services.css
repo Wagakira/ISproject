@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Ultra&display=swap');
+ 
+header {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: "Courier Prime";
+     font-weight: 800;
+  font-style: normal;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategrey;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.auth-buttons button {
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: white;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+    border-radius: 20px;
+}
+
+.signup-btn {
+    background: darkslategrey;
+    color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+ h2 {
+    font-size: 2em;
+    color: #d32f2f;
+    margin-bottom: 15px;
+    font-family: "Courier Prime";
+     font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
+h3{
+    text-align: center;
+    font-family: "Josefin Slab", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card h3 {
+            margin: 15px 0 10px;
+            color: #ff6b00;
+        }
+        .service-card p {
+            color: #666;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .cta a {
+     background: darkslategrey;
+    color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+        }
+
+        .cta a:hover {
+            background-color: #e65c00;
+        }
+.blurred {
+    filter: blur(5px);
+}
+.gallery-section {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding: 20px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+.item p {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: "Josefin Slab", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.item img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.item img:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+ p {
+    font-size: 0.7em;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+   font-style: normal;
+   text-align: center;
+}
+h1{
+    font-family: "Courier Prime";
+     font-weight: 800;
+  font-style: normal;
+}
+section h2 {
+    font-size: 2em;
+    color: #d32f2f;
+    margin-bottom: 15px;
+    font-family: "Courier Prime";
+     font-weight: 800;
+  font-style: normal;
+}
+h3{
+    text-align: center;
+    font-family: "Josefin Slab", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+button {
+    background-color: darkslategrey;
+    color: white;
+    padding: 12px 25px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+div{
+    text-align: center;
+}
+
+button:hover {
+    background-color: burlywood;
+}
+.auth-container {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: white;
+}

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      font-family: "Bitter", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2E8B57;
+      font-family: "Bodoni Moda", serif;
+
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .auth-buttons button {
+      margin-left: 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: "Courier Prime", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+    }
+
+    .btn-login {
+      background: transparent;
+      color: #2E8B57;
+      border: 1px solid #2E8B57;
+    }
+
+    .btn-signup {
+      background: #2E8B57;
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      margin: 50px 0;
+      font-family: "Bitter", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .cta-buttons button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-customer {
+      background: #2E8B57;
+      color: white;
+    }
+
+    .btn-vendor {
+      background: #333;
+      color: white;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .steps {
+      margin: 80px 0;
+      text-align: center;
+      font-family: "Suez One", serif;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+    .steps h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .step-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .step {
+      flex: 1;
+      padding: 20px;
+      max-width: 30%;
+
+    }
+
+    .step-number {
+      background: #2E8B57;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-weight: bold;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: #F9F9F9;
+      padding: 60px 0;
+      text-align: center;
+      font-family: "Bitter", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+
+    }
+
+    .testimonials h2 {
+      margin-bottom: 40px;
+    }
+
+    .testimonial-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .testimonial span {
+      font-weight: bold;
+      color: #2E8B57;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        margin-bottom: 30px;
+      }
+
+      .cta-buttons {
+        justify-content: center;
+      }
+
+      .step-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step {
+        max-width: 80%;
+        margin-bottom: 30px;
+      }
+
+      .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }

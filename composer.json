@@ -1,0 +1,10 @@
+{
+    "name": "kim/alt",
+    "description": "Catering System Project",
+    "type": "project",
+    "require": {
+        "stripe/stripe-php": "^16.6",
+        "safaricom/mpesa": "^1.0"
+    },
+    "minimum-stability": "stable"
+}

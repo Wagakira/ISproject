@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8F3; 
+    color: #8B5A2B; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #E07B39; 
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #8B5A2B; 
+    font-size: 14px;
+}
+
+h2 {
+    color: #E07B39; 
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #8B5A2B; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #8B5A2B; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #E07B39; 
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #8B5A2B;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-bottom-color: #F28C38; 
+}
+
+.payment-methods {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.method {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #E07B39; 
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.method.selected {
+    background-color: #F28C38; 
+    color: #fff;
+    border-color: #F28C38;
+}
+
+.method h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.method p {
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+ol {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #8B5A2B;
+}
+
+.btn {
+    background-color: #F28C38; 
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #E07B39; 
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background-color: rgba(242, 140, 56, 0.1); 
+    color: #8B5A2B;
+    border-left: 4px solid #F28C38;
+}
+
+.alert-error {
+    background-color: rgba(139, 90, 43, 0.1);
+    color: #8B5A2B;
+    border-left: 4px solid #8B5A2B;
+}
+
+.download-receipt {
+    color: #F28C38;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.download-receipt:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #E07B39;
+}
+
+th {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #E07B39;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.status-completed {
+    background-color: rgba(242, 140, 56, 0.1);
+    color: #F28C38;
+}
+
+.status-failed {
+    background-color: rgba(139, 90, 43, 0.1);
+    color: #8B5A2B;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .payment-methods {
+        flex-direction: column;
+    }
+}

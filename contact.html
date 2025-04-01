@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ CaterBind</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+      </nav>
+        <div class="auth-buttons">
+            <a href="login.php"><button class="login-btn" onclick="openModal()">Log in</button></a>
+            <a href="sign-up.html"><button class="signup-btn" onclick="openModal()">Sign up</button></a>
+        </div>
+    </header><br><br>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@caterbind.com</p>
+            <p><strong>Phone:</strong> +254701998246</p>
+            <p><strong>Address:</strong> PURELY ONLINE BASED</p>
+        </div>
+
+        <form class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <p>Follow us on:</p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+
+</body>
+</html>
